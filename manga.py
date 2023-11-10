@@ -60,16 +60,6 @@ class Manga:
             chapter_hash = response["chapter"]["hash"]
             return [f"https://uploads.mangadex.org/data/{chapter_hash}/{image}" for image in chapter_images]
         return []
-            
-            
-
-
-
-
-
-
-
-
 
 def format_url_data(data:dict) -> dict:
         if not("type" in data and "url" in data):
